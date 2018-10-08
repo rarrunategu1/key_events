@@ -8,7 +8,7 @@ if (x === true) {
 }
 input.addEventListener("keypress", goPink);
 function goPink(event) {
-    input.style.backgroundColor = "pink";
+    input.style.backgroundColor = "pink"; // Good choice of color 
 }
 
 function unicodeVal(event) {
@@ -18,7 +18,7 @@ function unicodeVal(event) {
 }
 
 addEventListener("keydown", function quitAndCelebrate(event){
-    if(event.keyCode == 81){
+    if(event.keyCode == 81){ // like how organize the code is, and easy to understand or just readable in general
     document.body.style.background = 'url(https://media.giphy.com/media/ZmdErsWqppgMo/giphy.gif)';
     var parent = document.getElementById("keyEvents");
     var child = document.getElementById("keyEventForm");

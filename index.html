@@ -8,26 +8,27 @@
     <title>Document</title>
 </head>
 <body>
-    <div id= "keyEvents">
+    <div id= "keyEvents"> <!-- keep everything indented, makes more appealing to the eye rather then mash it up, also makes it harder to read because of that (Words from the wise Cliff) -->
         <form id = "keyEventForm">
         <p>Please enter your first and last name below.</p>
         <p><strong>Activate the Caps Lock Key when you enter your last name</strong>:</p>
-        <input id="nameInput" type="text" onkeydown="capsLockOn(event)" onkeypress="goPink(event)">
+        <input id="nameInput" type="text" onkeydown="capsLockOn(event)" onkeypress="goPink(event)"><!-- wish I managed to do that, I like the idea! -->
         <p>Let's find out the Unicode Values and Locations of the numbers in your age.  Please enter your age below:</p>
         <input type="text" onkeypress="unicodeVal(event)" onkeydown="unicodeVal(event)">
         <p id="ageUnicode"></p>
         <p><strong>If you keep getting 0 for location here's why:</strong></p>
-        <ul>
+        <ul> <!-- like the extra info you put, makes me and the teacher know you understand why it does what it does -->
             <li>0 represents a standard key</li>
             <li>1 represents a left key like CTRL</li>
             <li>2 represents a right key</li>
             <li>3 represents a number on the numeric keypad</li>
         </ul>
         <p>And finally, please enter q so that we can quite and celebrate!</p>
-        <input type="text" onkeydown="quitAndCelebrate(event)">
+        <input type="text" onkeydown="quitAndCelebrate(event)"> <!-- Hands Down the best one.. like the creativity and humor, shows how enjoyable this was to you! -->
         
         </form>
     </div>
- <script type="text/javascript" src="events.js"></script>   
+ <script type="text/javascript" src="events.js"></script> <!-- if you want to connect to your other files you don't need to have the 'text/javascript' part, 
+ all you need is the source 'src' and it connects.. just a tip :) -->   
 </body>
 </html>
