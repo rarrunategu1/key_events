@@ -20,7 +20,11 @@ function unicodeVal(event) {
 addEventListener("keydown", function quitAndCelebrate(event){
     if(event.keyCode == 81){
     document.body.style.background = 'url(https://media.giphy.com/media/ZmdErsWqppgMo/giphy.gif)';
-}
+    var parent = document.getElementById("keyEvents");
+    var child = document.getElementById("keyEventForm");
+    parent.removeChild(child);
+        
+    }
 });
 
 
