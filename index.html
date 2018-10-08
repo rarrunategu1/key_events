@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+    
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id= "keyEvents">
+        <form>
+        <p>Please enter your first and last name below.</p>
+        <p><strong>Activate the Caps Lock Key when you enter your last name</strong>:</p>
+        <input id="nameInput" type="text" onkeydown="capsLockOn(event)" onkeypress="goPink(event)">
+        <p>Let's find out the Unicode Values and Locations of the numbers in your age.  Please enter your age below:</p>
+        <input type="text" onkeypress="unicodeVal(event)" onkeydown="unicodeVal(event)">
+        <p id="ageUnicode"></p>
+        <p><strong>If you keep getting 0 for location here's why:</strong></p>
+        <ul>
+            <li>0 represents a standard key</li>
+            <li>1 represents a left key like CTRL</li>
+            <li>2 represents a right key</li>
+            <li>3 represents a number on the numeric keypad</li>
+        </ul>
+        <p>And finally, please enter q so that we can quite and celebrate!</p>
+        <input type="text" onkeydown="quitAndCelebrate(event)">
+        
+        </form>
+    </div>
+ <script type="text/javascript" src="events.js"></script>   
+</body>
+</html>
